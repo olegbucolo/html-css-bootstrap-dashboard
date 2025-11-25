@@ -1,15 +1,18 @@
 .form-control {
     background-color: white;
-
 }
 
 .navbar{
     height: 5rem;
+    --bs-navbar-padding-y: .7rem;
 }
 
-.form-control:focus {
-    background-color: white;
-    color: rgba(128, 128, 128, 1)
+.navbar-collapse{
+    margin-right: -.7rem;
+    margin-left: -.7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
 }
 
 [data-bs-theme=dark] {
@@ -17,16 +20,25 @@
     --bs-body-color: rgba(128, 128, 128, 0.596);
 }
 
-.btn {
-    color: var(--bs-btn-hover-color);
-    background-color: transparent;
-    border-color: white;
+table p{
+    display: inline;
 }
 
-.btn:hover {
-    color: var(--bs-btn-hover-color);
-    background-color: transparent;
-    border-color: white;
+.fa-solid{
+    border: 1px solid grey;
+    color: grey;
+    border-radius: .4rem;
+    padding: .4rem;
+    width: 2rem;
+}
+
+.table>:not(caption)>*>*{
+    padding: .8rem .8rem;
+}
+
+.label{
+    padding: .1rem .4rem;
+    border-radius: .4rem;
 }
 
 .btn-check:checked+.btn,
@@ -40,4 +52,16 @@
 
 .navbar-brand img{
     width: 3rem;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+    }
+
+    .navbar-collapse {
+
+    padding-bottom: 0;
+}
 }
