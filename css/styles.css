@@ -21,7 +21,10 @@
 }
 
 table p{
-    display: inline;
+}
+
+.table{
+    margin-bottom: 0;
 }
 
 .fa-solid{
@@ -30,6 +33,7 @@ table p{
     border-radius: .4rem;
     padding: .4rem;
     width: 2rem;
+    margin: .2rem;
 }
 
 .table>:not(caption)>*>*{
@@ -39,6 +43,7 @@ table p{
 .label{
     padding: .1rem .4rem;
     border-radius: .4rem;
+    display: inline-block
 }
 
 .btn-check:checked+.btn,
