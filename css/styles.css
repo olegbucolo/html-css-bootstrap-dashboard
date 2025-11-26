@@ -36,6 +36,10 @@ table p{
     margin: .2rem;
 }
 
+.prova{
+    white-space:nowrap;
+}
+
 .table>:not(caption)>*>*{
     padding: .8rem .8rem;
 }
